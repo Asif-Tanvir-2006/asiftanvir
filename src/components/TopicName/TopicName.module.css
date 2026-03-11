@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: uf;
+    src: url("../../fonts/FiraCodeNerdFont-Medium.ttf");
+}
+
+.topic_name {
+    /* padding-top: 40px; */
+    /* font-size: 3rem; */
+    font-size: min(2.4rem, 6vw);
+    font-family: uf;
+    font-weight: bold;
+    display: flex;
+    color: #fdc35c;
+    /* text-align: left !important; */
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    /* min-width: 50vw; */
+    /* max-width: 40vw; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 40px; */
+    padding-left: 10px;
+}
+
+.yellow_line {
+    /* top: 0; */
+    /* padding-top: 10px; */
+    /* min-height: 3px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* max-height: 3px; */
+    /* min-width: 100%; */
+    flex: 1;
+    /* background-color: #fdc35c; */
+}
+
+.yellow_line .line {
+    min-width: 101%;
+    min-height: 3px;
+    background-color: #fdc35c;
+}
+
+/* initial hidden state */
+.topic_name {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* when revealed */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* animate the line sweep */
+.reveal .line {
+  transform: scaleX(1);
+}
+
+.line {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-out 0.3s;
+}
+
+/* bulge pop */
+.reveal .bulge {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.bulge {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.4s ease-out 0.6s;
+}

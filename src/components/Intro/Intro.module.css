@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: uf;
+    src: url("../../fonts/FiraCodeNerdFont-Medium.ttf");
+}
+
+.wrapper {
+    font-family: 'Poppins', uf;
+    height: fit-content;
+    width: 100vw;
+    padding-bottom: min(8vw, 40px);
+    display: flex;
+    padding-left: 17vw;
+    /* font-weight: bolder; */
+
+    /* font-size: min(1.2rem, 4vw); */
+    box-sizing: border-box;
+    background-color: #323647;
+    padding-right: 17vw;
+    color: white;
+
+}
+
+.helper {
+    /* background-color: #242734; */
+    background-color: #242734;
+
+    padding: 0 17vw;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    /* background-color: #323647; */
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.yellow {
+    color: #fdc35c;
+
+}
+
+.name {
+    /* color: yellow; */
+    font-size: min(3rem, 9vw);
+    margin-bottom: 10px;
+    font-family: Poppins;
+    /* background-color: transparent; */
+}
+
+.info {
+    font-size: 1rem;
+    font-size: min(0.8rem, 3vw);
+
+    font-family: uf;
+    color: rgba(190, 177, 177, 0.76);
+
+}
+
+.info_main {
+    font-size: 1.5rem;
+    font-size: min(1rem, 4vw);
+
+    margin-top: 20px;
+    font-family: uf;
+    max-width: max(500px, 35vw);
+    /* font-size: 20vw; */
+}
+
+.dash {
+    margin-top: 20px;
+    min-height: 7px;
+    max-width: 60px;
+    background-color: #fdc35c;
+}
+
+.socials {
+    margin-top: 30px;
+    font-size: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    font-family: uf;
+}
+
+.img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.socials button {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .wrapper,
+    .helper {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .right {
+        display: none;
+    }
+
+    .socials .smallImg {
+        all: unset;
+        display: block;
+        min-height: 40px;
+        max-height: 40px;
+        max-width: 40px;
+        min-width: 40px;
+        border-radius: 50%;
+        background-color: red;
+        background-image: url("../../assets/me.webp");
+        background-size: cover;
+    }
+
+    .info_main {
+
+        margin-top: 20px;
+        font-family: uf;
+        max-width: 80%;
+        /* font-size: 20vw; */
+    }
+}
+
+/* LEFT (text) */
+.hiddenLeft {
+    opacity: 0;
+    transform: translateX(-40px);
+}
+
+.showLeft {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* RIGHT (profile image) */
+.hiddenRight {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.showRight {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}

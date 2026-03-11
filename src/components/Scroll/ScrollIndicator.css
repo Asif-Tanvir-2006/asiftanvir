@@ -1,0 +1,16 @@
+.scroll-indicator {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.scroll-progress {
+  width: 100%;
+  height: 0%;
+  background: #fdc35c;
+  transition: height 0.15s ease-out;
+}
