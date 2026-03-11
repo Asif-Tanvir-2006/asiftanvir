@@ -3,8 +3,7 @@
 A modern, interactive developer portfolio built with **React**.  
 Showcasing my projects, skills, experience, and a little bit of my personality.
 
-> Live Demo: https://asif-tanvir-portfolio.vercel.app  
-> GitHub: https://github.com/Asif-Tanvir-2006
+> Live Demo: https://asiftanvir.pages.dev  
 
 ---
 
