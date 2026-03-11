@@ -37,7 +37,7 @@ Showcasing my projects, skills, experience, and a little bit of my personality.
 Clone the repo and run locally:
 
 ```bash
-git clone https://github.com/Asif-Tanvir-2006/asif_tanvir_portfolio.git
+git clone https://github.com/Asif-Tanvir-2006/asiftanvir.git
 cd asif_tanvir_portfolio
 npm install
 npm start
