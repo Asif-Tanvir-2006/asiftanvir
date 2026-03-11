@@ -38,6 +38,6 @@ Clone the repo and run locally:
 
 ```bash
 git clone https://github.com/Asif-Tanvir-2006/asiftanvir.git
-cd asif_tanvir_portfolio
+cd asiftanvir
 npm install
 npm start
